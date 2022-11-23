@@ -15,12 +15,20 @@ a {
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  background: black;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: white;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
   body {
-    color: white;
     background: #101820FF;
   }
 }
