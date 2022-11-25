@@ -4,16 +4,16 @@ import TimelineOppositeContent, {
 } from '@mui/lab/TimelineOppositeContent';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 export default function Experience() {
-    const timelineTitleStyle = { fontWeight: 700, fontSize: '3rem' };
-    const timelineContentStyle = { fontWeight: 500, fontSize: '1.5rem' };
-    const timelineDateStyle = { fontWeight: 700, fontSize: '2.5rem', color: 'gray' };
+    const timelineTitleStyle = { fontWeight: 700, fontSize: '3rem', color: 'rgb(20, 120, 255)' };
+    const timelineCompanyStyle = { fontWeight: 500, fontSize: '1rem', color: 'rgb(20, 120, 255, 0.7)' };
+    const timelineDateStyle = { fontWeight: 700, fontSize: '2.8rem', color: 'gray' };
     const timelineDotStyle = { width: '50px', height: '50px' };
 
     return(
-        <Container id='experience' width='xl'>
-        <Container sx={{ mx: 0, my: 10, color: 'rgb(20, 120, 255)', height: '80vh'}}>
+        <Container id='experience' sx={{width:'xl', height:'100vh'}} >
           <Timeline sx={{[`& .${timelineOppositeContentClasses.root}`]: {flex: 0.4}}}>
             <TimelineItem>
               <TimelineOppositeContent>
@@ -25,7 +25,8 @@ export default function Experience() {
               </TimelineSeparator>
               <TimelineContent > 
                 <Typography sx={timelineTitleStyle}> Full stack developer </Typography>
-                <Typography sx={timelineContentStyle}> Centre for Research & Technology HELLAS (CERTH) </Typography>
+                <Typography sx={timelineCompanyStyle}> <LocationOnIcon sx={{color: 'white'}}/> Centre for Research & Technology HELLAS (CERTH) </Typography>
+                <Typography></Typography>
               </TimelineContent>
             </TimelineItem>
             <TimelineItem>
@@ -38,7 +39,7 @@ export default function Experience() {
               </TimelineSeparator>
               <TimelineContent>
                 <Typography sx={timelineTitleStyle}> Unity developer </Typography>
-                <Typography sx={timelineContentStyle}> Greek Army (Research & Information Department) </Typography> 
+                <Typography sx={timelineCompanyStyle}> <LocationOnIcon sx={{color: 'white'}}/> Greek Army (Research & Information Department) </Typography> 
               </TimelineContent>
             </TimelineItem>
             <TimelineItem>
@@ -50,11 +51,11 @@ export default function Experience() {
               </TimelineSeparator>
               <TimelineContent>                 
                 <Typography sx={timelineTitleStyle}> Coding and Robotics Instructor </Typography>
-                <Typography sx={timelineContentStyle}> University of Macedonia Robotics Academy </Typography>
+                <Typography sx={timelineCompanyStyle}> <LocationOnIcon sx={{color: 'white'}}/> University of Macedonia Robotics Academy </Typography>
               </TimelineContent>
             </TimelineItem>
           </Timeline>
-        </Container>
+
       </Container>
     );
 }
