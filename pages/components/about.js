@@ -33,9 +33,31 @@ export default function About() {
                 height="90vh"
                 position="absolute"
             />
-            <Typography sx={{position:"absolute", top: '20%', left: '25%', textAlign:'center', fontWeight: '500', fontSize: '10vw'}}>
-                Hello
-                <br />I am Tasos
+            <Typography
+                sx={{
+                    position: "absolute",
+                    top: "30%",
+                    left: "20%",
+                    textAlign: "center",
+                }}
+            >
+                <Typography
+                    sx={{
+                        fontWeight: "500",
+                        fontSize: "3vw",
+                        color: "rgb(120, 200, 255)",
+                    }}
+                >
+                    Hello my name is
+                </Typography>
+                <Typography
+                    sx={{
+                        fontWeight: "500",
+                        fontSize: "8vw",
+                    }}
+                >
+                    Tasos Gkagkas
+                </Typography>
             </Typography>
         </Container>
     );

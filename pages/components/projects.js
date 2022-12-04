@@ -4,15 +4,17 @@ import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import Chip from '@mui/material/Chip';
+import Title from './Title';
 
 export default function Projects() {
-    const cardStyle = { height: '300px', width: '100%', display: 'flex' };
+    const cardStyle = { height: '300px', width: '100%', display: 'flex', my: '10px' };
     const cardContentStyle = { position: 'relative', height: '100%', width:'70%', color: 'rgb(20, 120, 255)', background: 'rgb(5, 20, 40)' };
     const cardChipStyle = { my:1, mx: 0.5, p: 0.5, fontSize: '1.2rem', color: 'rgb(20, 120, 255)', background: 'black' };
     const cardMediaStyle = { height: '100%', width: '40%'};
 
     return(
-        <Container id='projects' maxWidth='lg' sx={{ my: 10, height: '90vh', display: 'flex', flexDirection: 'column', justifyContent:'space-evenly'}}>
+        <Container id='projects' maxWidth='lg' sx={{ my: 10, display: 'flex', flexDirection: 'column'}}>
+          <Title text='Some of my projects...'></Title>
           <Card sx={cardStyle}> 
             <CardMedia
               component="img" 
