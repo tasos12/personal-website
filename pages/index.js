@@ -8,6 +8,7 @@ import Experience from './components/experience';
 import Projects from './components/projects';
 import Contact from './components/contact';
 import Box from '@mui/material/Box';
+import Social from './components/social';
 
 export default function Home() {
 
@@ -18,6 +19,7 @@ export default function Home() {
       <Experience/>       
       <Projects/>
       <Contact/>
+      <Social/>
     </Box>
   )
 }

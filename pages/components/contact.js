@@ -1,7 +1,7 @@
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
-import Title from './Title';
+import Title from './shared/Title';
 
 export default function Contact() {
     return (
