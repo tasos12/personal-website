@@ -54,8 +54,12 @@ a {
   font-size: calc(10px + 0.4vw);
 }
 
+.header-text {
+  font-size: calc(20px + 4vw);
+}
+
 .header1-text {
-  font-size: calc(18px + 2vw);
+  font-size: calc(20px + 2.5vw);
 }
 
 .header2-text {

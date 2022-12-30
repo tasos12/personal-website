@@ -7,7 +7,7 @@ export default function Projects() {
         <Container
             id="projects"
             maxWidth={false}
-            sx={{ my: 10, display: "flex", flexDirection: "column" }}
+            sx={{ my: 4, display: "flex", flexDirection: "column" }}
         >
             <Title text="Some of my projects"></Title>
             <Container maxWidth={'md'}>

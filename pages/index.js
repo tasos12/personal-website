@@ -13,9 +13,11 @@ import Footer from './components/footer';
 
 export default function Home() {
 
+  const pages = ["about", "experience", "projects", "contact"];
+
   return (
     <Box sx={{position: 'relative', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-      <Navbar/>   
+      <Navbar pages={pages}/>
       <About/>
       <Experience/>       
       <Projects/>

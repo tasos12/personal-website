@@ -23,7 +23,7 @@ const ParticleOptions = {
     defaultThemes: {},
     delay: 0,
     fullScreen: {
-        enable: false,
+        enable: true,
         zIndex: -1,
     },
     detectRetina: true,
@@ -251,10 +251,10 @@ const ParticleOptions = {
             drift: 0,
             enable: true,
             gravity: {
-                acceleration: 9.81,
+                acceleration: 2,
                 enable: false,
                 inverse: false,
-                maxSpeed: 50,
+                maxSpeed: 10,
             },
             path: {
                 clamp: true,
@@ -299,7 +299,7 @@ const ParticleOptions = {
                 area: 800,
                 factor: 1000,
             },
-            limit: 500,
+            limit: 100,
             value: 300,
         },
         opacity: {
@@ -496,13 +496,13 @@ const ParticleOptions = {
             width: 1,
         },
         links: {
-            blink: false,
+            blink: true,
             color: {
                 value: "#ffffff",
             },
             consent: false,
             distance: 150,
-            enable: false,
+            enable: true,
             frequency: 1,
             opacity: 0.4,
             shadow: {

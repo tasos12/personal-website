@@ -1,16 +1,23 @@
-import { Timeline, TimelineItem, TimelineDot, TimelineConnector, TimelineSeparator, TimelineContent } from '@mui/lab';
+import {
+    Timeline,
+    TimelineItem,
+    TimelineDot,
+    TimelineConnector,
+    TimelineSeparator,
+    TimelineContent,
+} from "@mui/lab";
 import TimelineOppositeContent, {
-  timelineOppositeContentClasses,
-} from '@mui/lab/TimelineOppositeContent';
-import Typography from '@mui/material/Typography';
-import Container from '@mui/material/Container';
-import LocationOn from '@mui/icons-material/LocationOn';
+    timelineOppositeContentClasses,
+} from "@mui/lab/TimelineOppositeContent";
+import Typography from "@mui/material/Typography";
+import Container from "@mui/material/Container";
+import LocationOn from "@mui/icons-material/LocationOn";
 import ComputerSharp from "@mui/icons-material/ComputerSharp";
 import CalendarMonth from "@mui/icons-material/CalendarMonth";
 import Chip from "@mui/material/Chip";
 import Link from "@mui/material/Link";
-import Title from './shared/Title';
-import Image from 'next/image';
+import Title from "./shared/Title";
+import Image from "next/image";
 
 export default function Experience() {
     const titleContainerStyle = {
@@ -27,9 +34,9 @@ export default function Experience() {
         flex: 0.9,
         alignItems: "center",
     };
-    const dateContainerStyle = { 
-        display: "flex", 
-        alignItems: "center"
+    const dateContainerStyle = {
+        display: "flex",
+        alignItems: "center",
     };
 
     const contentContainerStyle = {
@@ -42,21 +49,30 @@ export default function Experience() {
         borderRadius: "10px",
     };
     const contentTextStyle = {
-        flex: 0.8,
+        flex: 1,
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
     };
-    const imageContainerStyle = { 
+    const imageContainerStyle = {
         display: "flex",
         justifyContent: "center",
-        position: "relative" 
+        position: "relative",
     };
     const imageStyle = {
         objectFit: "contain",
         width: "100%",
         maxWidth: "160px",
-    };    
+    };
+    const chipContainerStyle = {
+        marginTop: 8,
+        marginBottom: 8,
+    };
+    const chipStyle = {
+        margin: "2px",
+        background: "black",
+        color: "white",
+    };
 
     return (
         <Container id="experience" maxWidth={false}>
@@ -104,23 +120,24 @@ export default function Experience() {
                                 </Link>
                             </div>
                             <div style={{ margin: 8 }}>
-                                Dedscription about my job here.
+                                Developing full stack solutions for research and
+                                development projects using PHP/Laravel, ReactJs
+                                and MongoDB.
                             </div>
-                            <div style={{ margin: 8 }}>
-                                <Chip
-                                    style={{
-                                        background: "black",
-                                        color: "white",
-                                    }}
-                                    label="React"
-                                />
+                            <div style={chipContainerStyle}>
+                                <Chip style={chipStyle} label="Javascript" />
+                                <Chip style={chipStyle} label="ReactJs" />
+                                <Chip style={chipStyle} label="PHP" />
+                                <Chip style={chipStyle} label="Laravel" />
+                                <Chip style={chipStyle} label="MongoDB" />
+                                <Chip style={chipStyle} label="Python" />
+                                <Chip style={chipStyle} label="Java" />
                             </div>
                         </div>
                         <div style={imageContainerStyle}>
                             <img
                                 alt="cert-logo"
                                 src="/images/home/certh.png"
-                                fill
                                 style={imageStyle}
                             />
                         </div>
@@ -169,26 +186,28 @@ export default function Experience() {
                                 </Link>
                             </div> */}
                             <div style={{ margin: 8 }}>
-                                Dedscription about my job here.
+                                Designed and developed a scalable multiplayer
+                                solution for a VR simulation game utilizing
+                                parallel programming methods using C#
+                                and Unity game engine.
                             </div>
-                            <div style={{ margin: 8 }}>
+
+                            <div style={chipContainerStyle}>
+                                <Chip style={chipStyle} label="Unity" />
+                                <Chip style={chipStyle} label="C#" />
                                 <Chip
-                                    style={{
-                                        background: "black",
-                                        color: "white",
-                                    }}
-                                    label="React"
+                                    style={chipStyle}
+                                    label="Parallel programming"
                                 />
                             </div>
                         </div>
-                        <div style={imageContainerStyle}>
+                        {/* <div style={imageContainerStyle}>
                             <img
                                 alt="cert-logo"
                                 src="/images/home/certh.png"
-                                fill
                                 style={imageStyle}
                             />
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </Container>

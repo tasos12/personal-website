@@ -15,7 +15,7 @@ export default function ProjectCard({ title, description, tags, image, link, rig
         <Card
             sx={{
                 position: "relative",
-                my: 6,
+                my: 4,
                 boxShadow: "0 0 16px 0 " + (hover ? "white" : "rgb(10, 40, 200)"),
             }}
             onMouseEnter={() => setHover(true)}
@@ -30,7 +30,7 @@ export default function ProjectCard({ title, description, tags, image, link, rig
                     sx={{ objectFit: "cover" }}
                 />
                 <CardContent
-                    sx={{ background: "rgb(10, 10, 50)", color: "white" }}
+                    sx={{ background: "rgb(10, 20, 70)", color: "white", py: 3}}
                 >
                     <Typography
                         className="header2-text"
@@ -44,6 +44,7 @@ export default function ProjectCard({ title, description, tags, image, link, rig
                         className="normal-text"
                         variant="body2"
                         color="white"
+                        sx={{ my: 3 }}
                     >
                         {description}
                     </Typography>
@@ -59,6 +60,7 @@ export default function ProjectCard({ title, description, tags, image, link, rig
                             <Chip
                                 key={index}
                                 label={tag}
+                                className="normal-text"
                                 sx={{ color: "white", background: "black" }}
                             />
                         ))}

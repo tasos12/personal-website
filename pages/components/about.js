@@ -3,6 +3,7 @@ import { useCallback } from "react";
 import Particles from "react-particles";
 import { loadFull } from 'tsparticles';
 import ParticleOptions from "./particleOptions";
+import Social from "./social";
 
 export default function About() {
     const init = useCallback(
@@ -15,12 +16,13 @@ export default function About() {
         <Container
             id="about"
             sx={{
-                p: 0,
-                m: 0,
-                mt: "60px",
                 width: "xl",
-                height: "95vh",
+                height: "100vh",
                 position: "relative",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "center",
             }}
             maxWidth={false}
         >
@@ -28,40 +30,32 @@ export default function About() {
                 id="tsparticles"
                 init={init}
                 options={ParticleOptions}
-                width="100%"
-                height="90vh"
                 position="absolute"
             />
-            <Typography
-                component={"div"}
-                id='repulse-div'
-                sx={{
-                    position: "absolute",
-                    top: "30%",
-                    left: "20%",
-                    textAlign: "center",
-                }}
-            >
-                <Typography
-                    component={"h3"}
-                    sx={{
-                        fontWeight: "500",
-                        fontSize: "3vw",
-                        color: "rgb(120, 200, 255)",
-                    }}
-                >
-                    Hello my name is
-                </Typography>
+            <div id="repulse-div">
                 <Typography
                     component={"h1"}
+                    className="header-text"
                     sx={{
                         fontWeight: "500",
-                        fontSize: "8vw",
                     }}
                 >
                     Tasos Gkagkas
                 </Typography>
-            </Typography>
+                <Typography
+                    component={"h2"}
+                    className="header2-text"
+                    sx={{
+                        fontWeight: "700",
+                        color: "rgb(120, 200, 255)",
+                        mb: 5,
+                        textAlign: "center",
+                    }}
+                >
+                    Full-stack Developer, Game Developer.
+                </Typography>
+            </div>
+            <Social />
         </Container>
     );
 }

@@ -13,7 +13,7 @@ export default function Footer() {
             }}
             component={"footer"}
         >
-            <Typography sx={{ fontSize: "0.4rem" }}>
+            <Typography sx={{ fontSize: "0.8rem" }}>
                 ©Copyright 2022. Made by <Link href="">Tasos Gkagkas</Link>
             </Typography>
         </Container>

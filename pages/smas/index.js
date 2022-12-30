@@ -9,11 +9,12 @@ import Footer from "../components/footer";
 import overviewImage from '/public/images/smas/overview.png';
 
 export default function Home() {
+    const pages = ["overview", "tools", "challenge"];
     const cardChipStyle = { my:1, mx: 0.5, p: 0.5, fontSize: '1.2rem', color: 'white', background: 'black' };
 
     return (
         <>
-            <Navbar />
+            <Navbar pages={pages}/>
             <Container
                 maxWidth="lg"
                 sx={{
@@ -23,7 +24,7 @@ export default function Home() {
                     textAlign: "center",
                 }}
             >
-                <h1 style={{}}>Social Media Analytics Suite</h1>
+                <h1 id="overview">Social Media Analytics Suite</h1>
                 <Slide indicators={true} arrows={false}>
                     <Image
                         alt="overview"
@@ -36,13 +37,13 @@ export default function Home() {
                         }}
                     />
                 </Slide>
-                <h2>Tools used</h2>
+                <h2 id="tools">Tools used</h2>
                 <div>
                     <Chip sx={cardChipStyle} label="ReactJs" />
                     <Chip sx={cardChipStyle} label="Laravel" />
                     <Chip sx={cardChipStyle} label="MongoDB" />
                 </div>
-                <h2>The Challenge</h2>
+                <h2 id="challenge">The Challenge</h2>
                 <Footer/>
             </Container>
         </>

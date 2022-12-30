@@ -6,35 +6,23 @@ export default function Title(props) {
     useEffect(() => setText(props.text), [props.text]);
 
     return (
-        <Typography
-            component={"div"}
-            className="header1-text"
-            sx={{
-                whiteSpace: "nowrap",
-                width: "100%",
+        <div
+            style={{
                 display: "flex",
-                alignItems: "center",
-                fontWeight: 700,
-                color: "rgb(20, 100, 255)",
+                justifyContent: "center",
             }}
         >
             <Typography
-                component={"span"}
+                component={"h1"}
+                className="header1-text"
                 sx={{
-                    mr: "10px",
-                    width: "90%",
-                    borderBottom: "2px solid rgb(20, 120, 255, 0.3)",
+                    whiteSpace: "nowrap",
+                    fontWeight: 700,
+                    color: "white",
                 }}
-            />
-            {text}
-            <Typography
-                component={"span"}
-                sx={{
-                    ml: "10px",
-                    width: "90%",
-                    borderBottom: "2px solid rgb(20, 120, 255, 0.3)",
-                }}
-            />
-        </Typography>
+            >
+                {text}
+            </Typography>
+        </div>
     );
 }
