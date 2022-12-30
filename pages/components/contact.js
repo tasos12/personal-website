@@ -7,19 +7,19 @@ export default function Contact() {
     return (
         <Container
             id="contact"
-            width="md"
+            maxWidth='md'
             sx={{
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
-                height: "40vh",
+                height: "30vh",
             }}
         >
             <Title text="Get in Touch" />
-            <Typography sx={{ fontSize: "2rem", my: "15px" }}>
+            <Typography className="header2-text" sx={{ my: "15px" }}>
                 Interested in collaborating with me?
             </Typography>
-            <Typography sx={{ fontSize: "1.2rem", my: "10px" }}>
+            <Typography className="header3-text" sx={{ my: "10px" }}>
                 I am always open to new ideas and opportunities.
             </Typography>
             <Button>Start a conversation</Button>

@@ -1,5 +1,4 @@
 import { Container, Typography } from '@mui/material';
-import { textAlign } from '@mui/system';
 import { useCallback } from "react";
 import Particles from "react-particles";
 import { loadFull } from 'tsparticles';
@@ -34,6 +33,8 @@ export default function About() {
                 position="absolute"
             />
             <Typography
+                component={"div"}
+                id='repulse-div'
                 sx={{
                     position: "absolute",
                     top: "30%",
@@ -42,6 +43,7 @@ export default function About() {
                 }}
             >
                 <Typography
+                    component={"h3"}
                     sx={{
                         fontWeight: "500",
                         fontSize: "3vw",
@@ -51,6 +53,7 @@ export default function About() {
                     Hello my name is
                 </Typography>
                 <Typography
+                    component={"h1"}
                     sx={{
                         fontWeight: "500",
                         fontSize: "8vw",

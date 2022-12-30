@@ -22,6 +22,7 @@
     "react-dom": "18.2.0",
     "react-particles": "^2.5.3",
     "react-scroll": "^1.8.8",
+    "react-slideshow-image": "^4.1.1",
     "tsparticles": "^2.5.3"
   }
 }

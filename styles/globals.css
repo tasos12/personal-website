@@ -17,11 +17,12 @@ a {
 
 ::-webkit-scrollbar {
   background: black;
-  width: 10px;
+  width: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: white;
+  border-radius: 5px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -31,4 +32,36 @@ a {
   body {
     background: #101820FF;
   }
+}
+
+@media screen and (max-width: 800px) {
+  .responsive-flex-reverse {
+    flex-direction: column-reverse;
+  }
+
+  .responsive-flex {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .responsive-flex {
+      flex-direction: row;
+  }
+}
+
+.normal-text {
+  font-size: calc(10px + 0.4vw);
+}
+
+.header1-text {
+  font-size: calc(18px + 2vw);
+}
+
+.header2-text {
+  font-size: calc(12px + 0.8vw);
+}
+
+.header3-text {
+  font-size: calc(12px + 0.4vw);
 }

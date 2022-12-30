@@ -7,22 +7,18 @@ export default function Social() {
     return (
         <Typography
             sx={{
-                position: "sticky",
-                bottom: "20px",
-                left: "0px",
-                width: "95%",
                 display: "flex",
-                flexDirection: "column",
+                flexDirection: "row",
             }}
         >
             <Link href="https://github.com/tasos12">
                 <GitHub
-                    sx={{ my: "5px", fontSize: "2.5rem", color: "white" }}
+                    sx={{ m: "5px 10px", fontSize: "2.5rem", color: "white" }}
                 />
             </Link>
             <Link href="https://www.linkedin.com/in/tasos-gkagkas-09854714b/">
                 <LinkedIn
-                    sx={{ my: "5px", fontSize: "2.5rem", color: "white" }}
+                    sx={{ m: "5px 10px", fontSize: "2.5rem", color: "white" }}
                 />
             </Link>
         </Typography>

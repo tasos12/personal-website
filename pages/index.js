@@ -9,17 +9,19 @@ import Projects from './components/projects';
 import Contact from './components/contact';
 import Box from '@mui/material/Box';
 import Social from './components/social';
+import Footer from './components/footer';
 
 export default function Home() {
 
   return (
-    <Box sx={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+    <Box sx={{position: 'relative', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
       <Navbar/>   
       <About/>
       <Experience/>       
       <Projects/>
       <Contact/>
       <Social/>
+      <Footer/>
     </Box>
   )
 }
