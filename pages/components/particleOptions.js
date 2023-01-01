@@ -251,7 +251,7 @@ const ParticleOptions = {
             drift: 0,
             enable: true,
             gravity: {
-                acceleration: 2,
+                acceleration: 0,
                 enable: false,
                 inverse: false,
                 maxSpeed: 10,
@@ -277,7 +277,7 @@ const ParticleOptions = {
             },
             random: false,
             size: false,
-            speed: 6,
+            speed: 2,
             spin: {
                 acceleration: 0,
                 enable: false,
