@@ -11,6 +11,12 @@ a {
   text-decoration: none;
 }
 
+.button {
+  background: rgb(20, 20, 60, 0.9);
+  border-radius: 18px;
+  padding: 10px;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -59,11 +65,24 @@ a {
 }
 
 .header1-text {
+  margin: 20px 0;
   font-size: calc(20px + 2.5vw);
+}
+
+.header1-alt-text {
+  margin: 20px 0;
+  font-size: calc(24px + 1vw);
+  font-weight: 700;
 }
 
 .header2-text {
   font-size: calc(12px + 0.8vw);
+}
+
+.header2-alt-text {
+  margin: 10px 0;
+  font-size: calc(14px + 0.4vw);
+  font-weight: 700;
 }
 
 .header3-text {

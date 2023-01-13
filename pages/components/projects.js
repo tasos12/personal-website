@@ -10,8 +10,12 @@ export default function Projects() {
             sx={{ my: 4, display: "flex", flexDirection: "column" }}
         >
             <Title text="Some of my projects"></Title>
-            <Container maxWidth={'md'}>
+            <Container
+                sx={{ my: 4, display: "grid", gridGap: 20 }}
+                maxWidth={"md"}
+            >
                 <ProjectCard
+                    style={{ width: '40%'}}
                     title="CALLISTO Social Media Analytics Suite"
                     description="SMAS is a social media data monitoring and retrieval tool that allows the end user to retrieve filtered data and analytics from various social media platforms and visulize them in a dashboard environment."
                     tags={["MongoDB", "PHP", "Laravel", "ReactJs"]}

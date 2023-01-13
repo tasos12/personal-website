@@ -12,7 +12,7 @@ export default function Contact() {
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
-                height: "30vh",
+                my:"20px"
             }}
         >
             <Title text="Get in Touch" />
@@ -22,7 +22,7 @@ export default function Contact() {
             <Typography className="header3-text" sx={{ my: "10px" }}>
                 I am always open to new ideas and opportunities.
             </Typography>
-            <Button>Start a conversation</Button>
+            <Button className='button'>Start a conversation</Button>
         </Container>
     );
 }
