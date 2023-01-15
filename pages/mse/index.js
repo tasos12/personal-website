@@ -39,7 +39,7 @@ export default function Home() {
                         Multimodal Search Engine
                     </Typography>
                     <Slide indicators={true} arrows={false}>
-                        <img
+                        <Image
                             alt="overview"
                             src={overviewImage}
                             style={{
