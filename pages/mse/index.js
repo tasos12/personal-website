@@ -3,8 +3,8 @@ import "react-slideshow-image/dist/styles.css";
 import { Slide } from "react-slideshow-image";
 import Chip from "@mui/material/Chip";
 import Image from "next/image";
-import Navbar from "../components/navbar";
-import Footer from "../components/footer";
+import Navbar from "/components/navbar";
+import Footer from "/components/footer";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 
@@ -39,9 +39,8 @@ export default function Home() {
                         Multimodal Search Engine
                     </Typography>
                     <Slide indicators={true} arrows={false}>
-                        <Image
+                        <img
                             alt="overview"
-                            quality={100}
                             src={overviewImage}
                             style={{
                                 maxWidth: "100%",

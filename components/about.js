@@ -1,17 +1,8 @@
 import { Container, Typography } from '@mui/material';
-import { useCallback } from "react";
-import Particles from "react-particles";
-import { loadFull } from 'tsparticles';
-import ParticleOptions from "./particleOptions";
+import CustomParticles from "./shared/Particles";
 import Social from "./social";
 
 export default function About() {
-    const init = useCallback(
-        async (engine) => {
-            await loadFull(engine);
-        }, []
-    );
-
     return (
         <Container
             id="about"
@@ -26,12 +17,7 @@ export default function About() {
             }}
             maxWidth={false}
         >
-            <Particles
-                id="tsparticles"
-                init={init}
-                options={ParticleOptions}
-                position="absolute"
-            />
+            <CustomParticles/>
             <div id="repulse-div">
                 <Typography
                     component={"h1"}

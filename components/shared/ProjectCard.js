@@ -1,12 +1,11 @@
 import { useState } from "react";
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
-import CardContent from "@mui/material/CardContent";
 import CardActionArea from "@mui/material/CardActionArea";
 import Typography from "@mui/material/Typography";
 import Chip from "@mui/material/Chip";
 import Link from "next/link";
-import { Button } from "@mui/material";
+import Button from "@mui/material/Button";
 
 export default function ProjectCard({ title, description, tags, image, link, right }) {
     const [hover, setHover] = useState(false);
@@ -48,7 +47,7 @@ export default function ProjectCard({ title, description, tags, image, link, rig
                         </Typography>
                         <Typography component={'p'} >
                             {tags.map((tag) => (
-                                <Chip key={tag} label={tag} sx={{ mx: 0.5, my: 1, color: 'white', background: 'black' }} />
+                                <Chip key={tag} label={tag} sx={{ mx: '0.25vw', my: 1, color: 'white', background: 'black' }} />
                             ))}
                         </Typography>
                         <Button>

@@ -3,8 +3,8 @@ import "react-slideshow-image/dist/styles.css";
 import { Slide } from "react-slideshow-image";
 import Chip from "@mui/material/Chip";
 import Image from "next/image";
-import Navbar from "../components/navbar";
-import Footer from "../components/footer";
+import Navbar from "/components/navbar";
+import Footer from "/components/footer";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 
@@ -13,7 +13,7 @@ import overview2Image from "/public/images/smas/overview2.png";
 import overview3Image from "/public/images/smas/overview3.png";
 
 export default function Home() {
-    const pages = ["overview", "about", "technologies"];
+    const pages = ["overview", "about", "contribution", "technologies"];
     const sectionStyle = { margin: '20px 0' };
     const cardChipStyle = { my:1, mx: 0.5, p: 0.5, fontSize: '1.2rem', color: 'white', background: 'black' };
     const imageStyle = { maxWidth: '100%', height: 'auto', objectFit: 'cover' };
@@ -60,10 +60,23 @@ export default function Home() {
                         About the project
                     </Typography>
                     <Typography className="header2-text" component={"section"}>
-                        SMAS is a social media data monitoring and retrieval
-                        tool that allows the end user to retrieve filtered data
-                        and analytics from various social media platforms and
+                        SMAS is a social media data monitoring and retrieval app
+                        that allows the end user to retrieve filtered data and
+                        analytics from various social media platforms and
                         visulize them in a dashboard environment.
+                    </Typography>
+                </section>
+                <section id="contribution" style={sectionStyle}>
+                    <Typography className="header1-alt-text" component={"h2"}>
+                        My contribution
+                    </Typography>
+                    <Typography className="header2-text" component={"section"}>
+                        I was responsible for the design and development of the
+                        frontend and backend of the project using ReactJS and
+                        Laravel respectively. I also developed the database
+                        schema in MongoDB and implemented the Twitter and
+                        Instagram API using Java consumer that collects and
+                        stores the data using Java.
                     </Typography>
                 </section>
                 <section id="technologies" style={sectionStyle}>
@@ -74,6 +87,8 @@ export default function Home() {
                         <Chip sx={cardChipStyle} label="ReactJs" />
                         <Chip sx={cardChipStyle} label="Laravel" />
                         <Chip sx={cardChipStyle} label="MongoDB" />
+                        <Chip sx={cardChipStyle} label="Java" />
+                        <Chip sx={cardChipStyle} label="Docker" />
                     </div>
                 </section>
                 <Button>Visit the site</Button>
