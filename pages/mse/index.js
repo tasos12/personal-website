@@ -41,6 +41,7 @@ export default function Home() {
                     <Slide indicators={true} arrows={false}>
                         <Image
                             alt="overview"
+                            quality={100}
                             src={overviewImage}
                             style={{
                                 maxWidth: "100%",
