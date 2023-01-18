@@ -41,6 +41,7 @@ export default function Home() {
                     marginTop: "40px",
                     display: "flex",
                     flexDirection: "column",
+                    background: "#101820",
                 }}
             >
                 <section id="overview" style={sectionStyle}>

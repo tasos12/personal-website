@@ -44,17 +44,19 @@ export default function Home() {
                     marginTop: "40px",
                     display: "flex",
                     flexDirection: "column",
+                    background: "#101820",
                 }}
             >
                 <section id="overview" style={sectionStyle}>
-                    <Typography 
-                    style={{display: 'flex', justifyContent: 'space-between'}} 
-                    className="header1-alt-text" 
-                    component={"h2"}
+                    <Typography
+                        style={{
+                            display: "flex",
+                            justifyContent: "space-between",
+                        }}
+                        className="header1-alt-text"
+                        component={"h2"}
                     >
-                        <span>
-                            Social Media Analytics Suite
-                        </span>
+                        <span>Social Media Analytics Suite</span>
                         <Button
                             sx={{
                                 py: 1,
