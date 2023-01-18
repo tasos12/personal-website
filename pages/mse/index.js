@@ -1,12 +1,15 @@
+import Image from "next/image";
+import Head from "next/head";
+import Link from "next/link";
 import Container from "@mui/material/Container";
 import "react-slideshow-image/dist/styles.css";
 import { Slide } from "react-slideshow-image";
 import Chip from "@mui/material/Chip";
-import Image from "next/image";
 import Navbar from "/components/navbar";
 import Footer from "/components/footer";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import ArrowCircleRightOutlined from "@mui/icons-material/ArrowCircleRightOutlined";
 
 import overviewImage from "/public/images/mse/overview.png";
 
@@ -24,19 +27,48 @@ export default function Home() {
 
     return (
         <>
+            <Head>
+                <title>Tasos Gkagkas - Multimodal Search Engine</title>
+                <meta
+                    name="description"
+                    content="Multimodal Search Engine project overview"
+                />
+            </Head>
             <Navbar pages={pages} />
             <Container
                 maxWidth="md"
                 sx={{
-                    marginTop: "60px",
+                    marginTop: "40px",
                     display: "flex",
                     flexDirection: "column",
-                    textAlign: "center",
                 }}
             >
                 <section id="overview" style={sectionStyle}>
-                    <Typography className="header1-alt-text" component={"h2"}>
-                        Multimodal Search Engine
+                    <Typography
+                        style={{
+                            display: "flex",
+                            justifyContent: "space-between",
+                        }}
+                        className="header1-alt-text"
+                        component={"h2"}
+                    >
+                        <span>Multimodal Search Engine</span>
+                        <Button
+                            sx={{
+                                py: 1,
+                            }}
+                        >
+                            <Link
+                                style={{
+                                    display: "flex",
+                                    alignItems: "center",
+                                }}
+                                href="https://itigr.callisto.csgroup.space/MSE"
+                            >
+                                <span>Visit the site</span>
+                                <ArrowCircleRightOutlined sx={{ ml: 1 }} />
+                            </Link>
+                        </Button>
                     </Typography>
                     <Slide indicators={true} arrows={false}>
                         <Image
@@ -74,7 +106,6 @@ export default function Home() {
                         <Chip sx={cardChipStyle} label="HTML/CSS" />
                     </div>
                 </section>
-                <Button className="button">Visit the site</Button>
                 <Footer />
             </Container>
         </>

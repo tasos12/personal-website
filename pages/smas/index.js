@@ -1,40 +1,82 @@
+import Image from "next/image";
+import Head from "next/head";
+import Link from "next/link";
 import Container from "@mui/material/Container";
 import "react-slideshow-image/dist/styles.css";
 import { Slide } from "react-slideshow-image";
 import Chip from "@mui/material/Chip";
-import Image from "next/image";
-import Navbar from "/components/navbar";
-import Footer from "/components/footer";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import ArrowCircleRightOutlined from "@mui/icons-material/ArrowCircleRightOutlined";
+import Navbar from "/components/navbar";
+import Footer from "/components/footer";
 
-import overviewImage from '/public/images/smas/overview.png';
+import overviewImage from "/public/images/smas/overview.png";
 import overview2Image from "/public/images/smas/overview2.png";
 import overview3Image from "/public/images/smas/overview3.png";
 
 export default function Home() {
     const pages = ["overview", "about", "contribution", "technologies"];
-    const sectionStyle = { margin: '20px 0' };
-    const cardChipStyle = { my:1, mx: 0.5, p: 0.5, fontSize: '1.2rem', color: 'white', background: 'black' };
-    const imageStyle = { maxWidth: '100%', height: 'auto', objectFit: 'cover' };
+    const sectionStyle = { margin: "20px 0" };
+    const cardChipStyle = {
+        my: 1,
+        mx: 0.5,
+        p: 0.5,
+        fontSize: "1.1vw",
+        color: "white",
+        background: "black",
+    };
+    const imageStyle = { maxWidth: "100%", height: "auto", objectFit: "cover" };
 
     return (
         <>
+            <Head>
+                <title>Tasos Gkagkas - Social Media Analytics Suite</title>
+                <meta
+                    name="description"
+                    content="Social media analytics suite project overview"
+                />
+            </Head>
             <Navbar pages={pages} />
             <Container
                 maxWidth="md"
                 sx={{
-                    marginTop: "60px",
+                    marginTop: "40px",
                     display: "flex",
                     flexDirection: "column",
-                    textAlign: "center",
                 }}
             >
                 <section id="overview" style={sectionStyle}>
-                    <Typography className="header1-alt-text" component={"h2"}>
-                        Social Media Analytics Suite
+                    <Typography 
+                    style={{display: 'flex', justifyContent: 'space-between'}} 
+                    className="header1-alt-text" 
+                    component={"h2"}
+                    >
+                        <span>
+                            Social Media Analytics Suite
+                        </span>
+                        <Button
+                            sx={{
+                                py: 1,
+                            }}
+                        >
+                            <Link
+                                style={{
+                                    display: "flex",
+                                    alignItems: "center",
+                                }}
+                                href="https://itigr.callisto.csgroup.space/SMAS/"
+                            >
+                                <span>Visit the site</span>
+                                <ArrowCircleRightOutlined sx={{ ml: 1 }} />
+                            </Link>
+                        </Button>
                     </Typography>
-                    <Slide indicators={true} arrows={false}>
+                    <Slide
+                        style={{ display: "flex", justifyContent: "center" }}
+                        indicators={true}
+                        arrows={false}
+                    >
                         <Image
                             alt="overview"
                             quality={100}
@@ -75,8 +117,8 @@ export default function Home() {
                         frontend and backend of the project using ReactJS and
                         Laravel respectively. I also developed the database
                         schema in MongoDB and implemented the Twitter and
-                        Instagram API using Java consumer that collects and
-                        stores the data using Java.
+                        Instagram API consumer that collects and stores the data
+                        using Java.
                     </Typography>
                 </section>
                 <section id="technologies" style={sectionStyle}>
@@ -91,7 +133,6 @@ export default function Home() {
                         <Chip sx={cardChipStyle} label="Docker" />
                     </div>
                 </section>
-                <Button>Visit the site</Button>
                 <Footer />
             </Container>
         </>

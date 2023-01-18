@@ -17,7 +17,7 @@ export default function Projects() {
                 <ProjectCard
                     title="CALLISTO Social Media Analytics Suite"
                     description="SMAS is a social media data monitoring and retrieval tool that allows the end user to retrieve filtered data and analytics from various social media platforms and visulize them in a dashboard environment."
-                    tags={["MongoDB", "PHP", "Laravel", "ReactJs"]}
+                    tags={["MongoDB", "Laravel", "ReactJs"]}
                     link="/smas"
                     image="/images/smas/overview.png"
                 />

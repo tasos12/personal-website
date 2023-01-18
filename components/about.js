@@ -38,7 +38,7 @@ export default function About() {
                         textAlign: "center",
                     }}
                 >
-                    Full-stack Developer, Game Developer.
+                    Full-stack Developer.
                 </Typography>
             </div>
             <Social />
