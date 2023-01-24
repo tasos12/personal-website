@@ -14,7 +14,7 @@ export default function Footer() {
             component={"footer"}
         >
             <Typography sx={{ fontSize: "0.8rem" }}>
-                ©Copyright 2022. Made by <Link href="">Tasos Gkagkas</Link>
+                ©Copyright 2022. Made by <Link href="https://www.tasosgkagkas.com/">Tasos Gkagkas</Link>
             </Typography>
         </Container>
     );

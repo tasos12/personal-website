@@ -20,7 +20,6 @@ export default function Home() {
         my: 1,
         mx: 0.5,
         p: 0.5,
-        fontSize: "1.2rem",
         color: "white",
         background: "black",
     };
@@ -59,16 +58,18 @@ export default function Home() {
                                 py: 1,
                             }}
                         >
-                            <Link
+                            <a
                                 style={{
                                     display: "flex",
                                     alignItems: "center",
                                 }}
+                                target="_blank"
+                                rel="noreferrer"
                                 href="https://itigr.callisto.csgroup.space/MSE"
                             >
                                 <span>Visit the site</span>
                                 <ArrowCircleRightOutlined sx={{ ml: 1 }} />
-                            </Link>
+                            </a>
                         </Button>
                     </Typography>
                     <Slide indicators={true} arrows={false}>
@@ -101,10 +102,26 @@ export default function Home() {
                         Technologies
                     </Typography>
                     <div>
-                        <Chip sx={cardChipStyle} label="MongoDB" />
-                        <Chip sx={cardChipStyle} label="PHP" />
-                        <Chip sx={cardChipStyle} label="Javascript" />
-                        <Chip sx={cardChipStyle} label="HTML/CSS" />
+                        <Chip
+                            className="normal-text"
+                            sx={cardChipStyle}
+                            label="MongoDB"
+                        />
+                        <Chip
+                            className="normal-text"
+                            sx={cardChipStyle}
+                            label="PHP"
+                        />
+                        <Chip
+                            className="normal-text"
+                            sx={cardChipStyle}
+                            label="Javascript"
+                        />
+                        <Chip
+                            className="normal-text"
+                            sx={cardChipStyle}
+                            label="HTML/CSS"
+                        />
                     </div>
                 </section>
                 <Footer />

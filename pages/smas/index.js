@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Head from "next/head";
-import Link from "next/link";
 import Container from "@mui/material/Container";
 import "react-slideshow-image/dist/styles.css";
 import { Slide } from "react-slideshow-image";
@@ -22,7 +21,6 @@ export default function Home() {
         my: 1,
         mx: 0.5,
         p: 0.5,
-        fontSize: "1.1vw",
         color: "white",
         background: "black",
     };
@@ -57,21 +55,19 @@ export default function Home() {
                         component={"h2"}
                     >
                         <span>Social Media Analytics Suite</span>
-                        <Button
-                            sx={{
-                                py: 1,
-                            }}
-                        >
-                            <Link
+                        <Button>
+                            <a
                                 style={{
                                     display: "flex",
                                     alignItems: "center",
                                 }}
                                 href="https://itigr.callisto.csgroup.space/SMAS/"
+                                target="_blank"
+                                rel="noreferrer"
                             >
                                 <span>Visit the site</span>
                                 <ArrowCircleRightOutlined sx={{ ml: 1 }} />
-                            </Link>
+                            </a>
                         </Button>
                     </Typography>
                     <Slide
@@ -128,11 +124,31 @@ export default function Home() {
                         Technologies
                     </Typography>
                     <div>
-                        <Chip sx={cardChipStyle} label="ReactJs" />
-                        <Chip sx={cardChipStyle} label="Laravel" />
-                        <Chip sx={cardChipStyle} label="MongoDB" />
-                        <Chip sx={cardChipStyle} label="Java" />
-                        <Chip sx={cardChipStyle} label="Docker" />
+                        <Chip
+                            className="normal-text"
+                            sx={cardChipStyle}
+                            label="ReactJs"
+                        />
+                        <Chip
+                            className="normal-text"
+                            sx={cardChipStyle}
+                            label="Laravel"
+                        />
+                        <Chip
+                            className="normal-text"
+                            sx={cardChipStyle}
+                            label="MongoDB"
+                        />
+                        <Chip
+                            className="normal-text"
+                            sx={cardChipStyle}
+                            label="Java"
+                        />
+                        <Chip
+                            className="normal-text"
+                            sx={cardChipStyle}
+                            label="Docker"
+                        />
                     </div>
                 </section>
                 <Footer />

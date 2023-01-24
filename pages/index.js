@@ -23,7 +23,7 @@ export default function Home() {
             <Head>
                 <title>Tasos Gkagkas</title>
                 <meta
-                    name="description"
+                    name="Welcome to my website!"
                     content="Tasos Gkagkas' personal website."
                 />
             </Head>
