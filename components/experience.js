@@ -9,13 +9,14 @@ export default function Experience() {
             <Container maxWidth={"md"}>
                 <ExperienceCard
                     positionTitle="Full-Stack Developer"
-                    positionDescription="Developing full stack solutions for research
+                    positionDescription="Being part of the web and social media mining 
+                        team developing full stack solutions for research
                         and development projects using PHP/Laravel,
                         ReactJs and MongoDB."
-                    companyName="CERTH"
-                    companyLogo="/images/home/certh.png"
-                    companyLink="https://www.certh.gr/root.en.aspx"
-                    companyLinkShort="certh.gr"
+                    companyName="CERTH (M4D-Group)"
+                    companyLogo="/images/home/m4d.png"
+                    companyLink="https://m4d.iti.gr/"
+                    companyLinkShort="m4d.iti.gr"
                     datePeriod="Sept 2021 - Present"
                     technologies={[
                         "Javacript",
