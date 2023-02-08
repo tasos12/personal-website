@@ -41,11 +41,21 @@ a {
   .responsive-flex {
     flex-direction: column;
   }
+
+  .responsive-grid {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media screen and (min-width: 1025px) {
   .responsive-flex {
       flex-direction: row;
+  }
+
+  .responsive-grid {
+    display: grid;
+    grid-template-columns: auto auto;
   }
 }
 

@@ -107,11 +107,7 @@ export default function ExperienceCard(props) {
                     )}
                 </div>
             </div>
-            <AnimatePresence
-                initial={false}
-                exitBeforeEnter={true}
-                onExitComplete={() => null}
-            >
+            <AnimatePresence initial={false}>
                 {expanded && (
                     <motion.div
                         className="responsive-flex-reverse"

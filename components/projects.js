@@ -11,8 +11,8 @@ export default function Projects() {
         >
             <Title text="Some of my projects"></Title>
             <Container
-                sx={{ my: 4, display: "grid", gridGap: 20 }}
-                maxWidth={"md"}
+                className='responsive-grid'
+                maxWidth={"lg"}
             >
                 <ProjectCard
                     title="CALLISTO Social Media Analytics Suite"
@@ -24,7 +24,7 @@ export default function Projects() {
                 <ProjectCard
                     title="CALLISTO Multimodal Search Engine"
                     description="MSE is a web application developed for CALLISTO a HORIZON 2020 program that allows the end user: 1. To search and retrieve UAV images from a vast range of datasets 2. To design a fly area for a UAV and generate a mission path"
-                    tags={["MongoDB", "PHP", "Vanilla HTML", "CSS", "Docker"]}
+                    tags={["MongoDB", "PHP", "HTML", "CSS", "Docker"]}
                     image="/images/mse/overview.png"
                     link="/mse"
                     right={true}
