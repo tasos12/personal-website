@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Head from "next/head";
-import Link from "next/link";
 import Container from "@mui/material/Container";
 import "react-slideshow-image/dist/styles.css";
 import { Slide } from "react-slideshow-image";

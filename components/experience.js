@@ -31,7 +31,7 @@ export default function Experience() {
                 />
                 <ExperienceCard
                     positionTitle="Unity Developer"
-                    positionDescription=" Designed and developed a scalable multiplayer
+                    positionDescription="Designed and developed a scalable multiplayer
                                 solution for a VR simulation game utilizing
                                 parallel programming methods using C# and Unity
                                 game engine."
