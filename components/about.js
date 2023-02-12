@@ -8,7 +8,7 @@ export default function About() {
             id="about"
             sx={{
                 width: "xl",
-                height: "100vh",
+                height: "102vh",
                 position: "relative",
                 display: "flex",
                 flexDirection: "column",
