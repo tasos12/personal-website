@@ -22,7 +22,7 @@ import MongodbOriginal from "devicons-react/lib/icons/MongodbOriginal";
 import DockerOriginal from "devicons-react/lib/icons/DockerOriginal";
 import GitOriginal from "devicons-react/lib/icons/GitOriginal";
 import BashOriginal from "devicons-react/lib/icons/BashOriginal";
-import VisualStudioPlain from "devicons-react/lib/icons/VisualStudioPlain";
+// import VisualStudioPlain from "devicons-react/lib/icons/VisualStudioPlain";
 
 export default function Skills() {
     return (
@@ -141,10 +141,7 @@ export default function Skills() {
                         },
                         {
                             name: "Visual Studio Code",
-                            icon: <VisualStudioPlain
-                                    color="lightblue"
-                                    size="24"
-                                  />,
+                            icon: ""
                         },
                     ]}
                 />
