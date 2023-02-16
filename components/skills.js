@@ -28,6 +28,7 @@ export default function Skills() {
     return (
         <Container
             id="skills"
+            component={"section"}
             maxWidth={false}
             sx={{
                 minHeight: "100vh",
@@ -41,118 +42,112 @@ export default function Skills() {
                 maxWidth={"md"}
                 sx={{ gap: 2 }}
             >
-                    <SkillList
-                        title="Front-end"
-                        skills={[
-                            {
-                                name: "HTML5",
-                                icon: <Html5Original size="24" />,
-                            },
-                            {
-                                name: "CSS3",
-                                icon: <Css3Original size="24" />,
-                            },
-                            {
-                                name: "JavaScript",
-                                icon: <JavascriptOriginal size="24" />,
-                            },
-                            {
-                                name: "ReactJS",
-                                icon: <ReactOriginal size="24" />,
-                            },
-                            {
-                                name: "Next.js",
-                                icon: <NextjsOriginal size="24" />,
-                            },
-                            {
-                                name: "LeafletJS",
-                                icon: (
-                                    <Image
-                                        src={LeafletJS}
-                                        alt="leafletjs"
-                                        width="24"
-                                    />
-                                ),
-                            },
-                            {
-                                name: "Chart.js",
-                                icon: (
-                                    <Image
-                                        src={ChartJS}
-                                        alt="chartjs"
-                                        width="24"
-                                    />
-                                ),
-                            },
-                            {
-                                name: "Material UI",
-                                icon: <MaterialuiOriginal size="24" />,
-                            },
-                        ]}
-                    />
-                    <SkillList
-                        title="Back-end"
-                        skills={[
-                            {
-                                name: "Java",
-                                icon: <JavaOriginal size="24" />,
-                            },
-                            {
-                                name: "PHP",
-                                icon: <PhpPlain size="24" />,
-                            },
-                            {
-                                name: "C#",
-                                icon: <CsharpOriginal size="24" />,
-                            },
-                            {
-                                name: "Python",
-                                icon: <PythonOriginal size="24" />,
-                            },
-                            {
-                                name: "Laravel",
-                                icon: <LaravelOriginal size="24" />,
-                            },
-                            {
-                                name: ".NET Core",
-                                icon: <DotnetcoreOriginal size="24" />,
-                            },
-                            {
-                                name: "MySQL",
-                                icon: <MysqlOriginal size="24" />,
-                            },
-                            {
-                                name: "MongoDB",
-                                icon: <MongodbOriginal size="24" />,
-                            },
-                            {
-                                name: "Docker",
-                                icon: <DockerOriginal size="24" />,
-                            },
-                        ]}
-                    />
-                    <SkillList
-                        title="Tools"
-                        skills={[
-                            {
-                                name: "Git",
-                                icon: <GitOriginal size="24" />,
-                            },
-                            {
-                                name: "Bash",
-                                icon: <BashOriginal size="24" />,
-                            },
-                            {
-                                name: "Visual Studio Code",
-                                icon: (
-                                    <VisualStudioPlain
-                                        color="lightblue"
-                                        size="24"
-                                    />
-                                ),
-                            }
-                        ]}
-                    />
+                <SkillList
+                    title="Front-end"
+                    skills={[
+                        {
+                            name: "HTML5",
+                            icon: <Html5Original size="24" />,
+                        },
+                        {
+                            name: "CSS3",
+                            icon: <Css3Original size="24" />,
+                        },
+                        {
+                            name: "JavaScript",
+                            icon: <JavascriptOriginal size="24" />,
+                        },
+                        {
+                            name: "ReactJS",
+                            icon: <ReactOriginal size="24" />,
+                        },
+                        {
+                            name: "Next.js",
+                            icon: <NextjsOriginal size="24" />,
+                        },
+                        {
+                            name: "LeafletJS",
+                            icon: (
+                                <Image
+                                    src={LeafletJS}
+                                    alt="leafletjs"
+                                    width="24"
+                                />
+                            ),
+                        },
+                        {
+                            name: "Chart.js",
+                            icon: (
+                                <Image src={ChartJS} alt="chartjs" width="24" />
+                            ),
+                        },
+                        {
+                            name: "Material UI",
+                            icon: <MaterialuiOriginal size="24" />,
+                        },
+                    ]}
+                />
+                <SkillList
+                    title="Back-end"
+                    skills={[
+                        {
+                            name: "Java",
+                            icon: <JavaOriginal size="24" />,
+                        },
+                        {
+                            name: "PHP",
+                            icon: <PhpPlain size="24" />,
+                        },
+                        {
+                            name: "C#",
+                            icon: <CsharpOriginal size="24" />,
+                        },
+                        {
+                            name: "Python",
+                            icon: <PythonOriginal size="24" />,
+                        },
+                        {
+                            name: "Laravel",
+                            icon: <LaravelOriginal size="24" />,
+                        },
+                        {
+                            name: ".NET Core",
+                            icon: <DotnetcoreOriginal size="24" />,
+                        },
+                        {
+                            name: "MySQL",
+                            icon: <MysqlOriginal size="24" />,
+                        },
+                        {
+                            name: "MongoDB",
+                            icon: <MongodbOriginal size="24" />,
+                        },
+                        {
+                            name: "Docker",
+                            icon: <DockerOriginal size="24" />,
+                        },
+                    ]}
+                />
+                <SkillList
+                    title="Tools"
+                    skills={[
+                        {
+                            name: "Git",
+                            icon: <GitOriginal size="24" />,
+                        },
+                        {
+                            name: "Bash",
+                            icon: <BashOriginal size="24" />,
+                        },
+                        {
+                            name: "Visual Studio Code",
+                            icon: <VisualStudioPlain
+                                    color="lightblue"
+                                    size="24"
+                                  />,
+                        },
+                    ]}
+                />
             </Container>
         </Container>
     );
