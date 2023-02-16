@@ -26,6 +26,7 @@ import ChartJS from "/public/images/shared/chartjs.ico";
 import overviewImage from "/public/images/smas/overview.png";
 import overview2Image from "/public/images/smas/overview2.png";
 import overview3Image from "/public/images/smas/overview3.png";
+import SkillList from "/components/shared/SkillList";
 
 export default function Home() {
     const pages = ["overview", "about", "technologies"];
@@ -137,82 +138,56 @@ export default function Home() {
                         Technologies
                     </Typography>
                     <Container className="responsive-grid" sx={{ gap: "20px" }}>
-                        <Paper elevation={2} sx={technologyContainerStyle}>
-                            <List disablePadding={true}>
-                                <ListSubheader sx={listSubheaderStyle}>
-                                    Front-end
-                                </ListSubheader>
-                                <ListItem>
-                                    <ListItemIcon
-                                        sx={{ justifyContent: "center" }}
-                                    >
-                                        <ReactOriginal size="24" />
-                                    </ListItemIcon>
-                                    <ListItemText>ReactJS</ListItemText>
-                                </ListItem>
-                                <Divider />
-                                <ListItem>
-                                    <ListItemIcon
-                                        sx={{ justifyContent: "center" }}
-                                    >
-                                        <Image src={LeafletJS} alt="leafletjs" width="24"/>
-                                    </ListItemIcon>
-                                    <ListItemText>LeafletJS</ListItemText>
-                                </ListItem>
-                                <Divider />
-                                <ListItem>
-                                    <ListItemIcon
-                                        sx={{ justifyContent: "center" }}
-                                    >
-                                        <Image src={ChartJS} alt="chartjs" width="24"/>
-                                    </ListItemIcon>
-                                    <ListItemText>Chart.js</ListItemText>
-                                </ListItem>
-                            </List>
-                        </Paper>
-
-                        <Paper sx={technologyContainerStyle}>
-                            <List disablePadding={true}>
-                                <ListSubheader sx={listSubheaderStyle}>
-                                    Back-end
-                                </ListSubheader>
-                                <ListItem>
-                                    <ListItemIcon
-                                        sx={{ justifyContent: "center" }}
-                                    >
-                                        <LaravelOriginal size="24" />
-                                    </ListItemIcon>
-                                    <ListItemText>Laravel</ListItemText>
-                                </ListItem>
-                                <Divider />
-                                <ListItem>
-                                    <ListItemIcon
-                                        sx={{ justifyContent: "center" }}
-                                    >
-                                        <JavaOriginal size="24" />
-                                    </ListItemIcon>
-                                    <ListItemText>Java</ListItemText>
-                                </ListItem>
-                                <Divider />
-                                <ListItem>
-                                    <ListItemIcon
-                                        sx={{ justifyContent: "center" }}
-                                    >
-                                        <DockerOriginal size="24" />
-                                    </ListItemIcon>
-                                    <ListItemText>Docker</ListItemText>
-                                </ListItem>
-                                <Divider />
-                                <ListItem>
-                                    <ListItemIcon
-                                        sx={{ justifyContent: "center" }}
-                                    >
-                                        <MongodbOriginal size="24" />
-                                    </ListItemIcon>
-                                    <ListItemText>MongoDB</ListItemText>
-                                </ListItem>
-                            </List>
-                        </Paper>
+                        <SkillList
+                            title="Front-end"
+                            skills={[
+                                {
+                                    name: "ReactJS",
+                                    icon: <ReactOriginal size="24" />,
+                                },
+                                {
+                                    name: "LeafletJS",
+                                    icon: (
+                                        <Image
+                                            src={LeafletJS}
+                                            alt="leafletjs"
+                                            width="24"
+                                        />
+                                    ),
+                                },
+                                {
+                                    name: "Chart.js",
+                                    icon: (
+                                        <Image
+                                            src={ChartJS}
+                                            alt="chartjs"
+                                            width="24"
+                                        />
+                                    ),
+                                },
+                            ]}
+                        />
+                        <SkillList
+                            title="Back-end"
+                            skills={[
+                                {
+                                    name: "Laravel",
+                                    icon: <LaravelOriginal size="24" />,
+                                },
+                                {
+                                    name: "Java",
+                                    icon: <JavaOriginal size="24" />,
+                                },
+                                {
+                                    name: "MongoDB",
+                                    icon: <MongodbOriginal size="24" />,
+                                },
+                                {
+                                    name: "Docker",
+                                    icon: <DockerOriginal size="24" />,
+                                },
+                            ]}
+                        />
                     </Container>
                 </section>
                 <Footer />

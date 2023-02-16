@@ -7,9 +7,10 @@ import Contact from "/components/contact";
 import Box from "@mui/material/Box";
 import Social from "/components/social";
 import Footer from "/components/footer";
+import Skills from "/components/skills";
 
 export default function Home() {
-    const pages = ["experience", "projects", "contact"];
+    const pages = ["skills", "experience", "projects", "contact"];
 
     return (
         <Box
@@ -29,6 +30,7 @@ export default function Home() {
             </Head>
             <Navbar pages={pages} />
             <About />
+            <Skills />
             <Experience />
             <Projects />
             <Contact />

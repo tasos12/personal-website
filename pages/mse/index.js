@@ -2,19 +2,13 @@ import Image from "next/image";
 import Head from "next/head";
 import Navbar from "/components/navbar";
 import Footer from "/components/footer";
+import SkillList from "/components/shared/SkillList";
 import "react-slideshow-image/dist/styles.css";
 import { Slide } from "react-slideshow-image";
 import Container from "@mui/material/Container";
-import Paper from "@mui/material/Paper";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import ArrowCircleRightOutlined from "@mui/icons-material/ArrowCircleRightOutlined";
-import List from "@mui/material/List";
-import ListSubheader from "@mui/material/ListSubheader";
-import ListItem from "@mui/material/ListItem";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import ListItemText from "@mui/material/ListItemText";
-import Divider from "@mui/material/Divider";
 import Html5Original from "devicons-react/lib/icons/Html5Original";
 import Css3Original from "devicons-react/lib/icons/Css3Original";
 import JavascriptOriginal from "devicons-react/lib/icons/JavascriptOriginal";
@@ -114,98 +108,50 @@ export default function Home() {
                         Technologies
                     </Typography>
                     <Container className="responsive-grid" sx={{ gap: "20px" }}>
-                        <Paper elevation={2} sx={technologyContainerStyle}>
-                            <List disablePadding={true}>
-                                <ListSubheader
-                                    sx={{
-                                        background: "rgb(30, 30, 80)",
-                                        color: "white",
-                                        fontWeight: "700",
-                                    }}
-                                >
-                                    Front-end
-                                </ListSubheader>
-                                <ListItem>
-                                    <ListItemIcon
-                                        sx={{ justifyContent: "center" }}
-                                    >
-                                        <Html5Original size="24" />
-                                    </ListItemIcon>
-                                    <ListItemText>HTML</ListItemText>
-                                </ListItem>
-                                <Divider />
-                                <ListItem>
-                                    <ListItemIcon
-                                        sx={{ justifyContent: "center" }}
-                                    >
-                                        <Css3Original size="24" />
-                                    </ListItemIcon>
-                                    <ListItemText>CSS</ListItemText>
-                                </ListItem>
-                                <Divider />
-                                <ListItem>
-                                    <ListItemIcon
-                                        sx={{ justifyContent: "center" }}
-                                    >
-                                        <JavascriptOriginal size="24" />
-                                    </ListItemIcon>
-                                    <ListItemText>Javascript</ListItemText>
-                                </ListItem>
-                                <Divider />
-                                <ListItem>
-                                    <ListItemIcon
-                                        sx={{ justifyContent: "center" }}
-                                    >
+                        <SkillList
+                            title="Front-end"
+                            skills={[
+                                {
+                                    name: "HTML",
+                                    icon: <Html5Original size="24px" />,
+                                },
+                                {
+                                    name: "CSS",
+                                    icon: <Css3Original size="24px" />,
+                                },
+                                {
+                                    name: "Javascript",
+                                    icon: <JavascriptOriginal size="24px" />,
+                                },
+                                {
+                                    name: "LeafletJS",
+                                    icon: (
                                         <Image
                                             src={LeafletJS}
                                             alt="leafletjs"
                                             width="24"
                                         />
-                                    </ListItemIcon>
-                                    <ListItemText>LeafletJs</ListItemText>
-                                </ListItem>
-                            </List>
-                        </Paper>
-
-                        <Paper sx={technologyContainerStyle}>
-                            <List disablePadding={true}>
-                                <ListSubheader
-                                    sx={{
-                                        background: "rgb(30, 30, 80)",
-                                        color: "white",
-                                        fontWeight: "700",
-                                    }}
-                                >
-                                    Back-end
-                                </ListSubheader>
-                                <ListItem>
-                                    <ListItemIcon
-                                        sx={{ justifyContent: "center" }}
-                                    >
-                                        <PhpOriginal size="24" />
-                                    </ListItemIcon>
-                                    <ListItemText>PHP</ListItemText>
-                                </ListItem>
-                                <Divider />
-                                <ListItem>
-                                    <ListItemIcon
-                                        sx={{ justifyContent: "center" }}
-                                    >
-                                        <MongodbOriginal size="24" />
-                                    </ListItemIcon>
-                                    <ListItemText>MongoDB</ListItemText>
-                                </ListItem>
-                                <Divider />
-                                <ListItem>
-                                    <ListItemIcon
-                                        sx={{ justifyContent: "center" }}
-                                    >
-                                        <DockerOriginal size="24" />
-                                    </ListItemIcon>
-                                    <ListItemText>Docker</ListItemText>
-                                </ListItem>
-                            </List>
-                        </Paper>
+                                    ),
+                                },
+                            ]}
+                        />
+                        <SkillList
+                            title="Back-end"
+                            skills={[
+                                {
+                                    name: "PHP",
+                                    icon: <PhpOriginal size="24px" />,
+                                },
+                                {
+                                    name: "MongoDB",
+                                    icon: <MongodbOriginal size="24px" />,
+                                },
+                                {
+                                    name: "Docker",
+                                    icon: <DockerOriginal size="24px" />,
+                                },
+                            ]}
+                        />
                     </Container>
                 </section>
                 <Footer />

@@ -46,6 +46,11 @@ a {
     display: flex !important;
     flex-direction: column !important;
   }
+
+  .responsive-grid-3 {
+    display: flex !important;
+    flex-direction: column !important;
+  }
 }
 
 @media screen and (min-width: 1025px) {
@@ -56,6 +61,11 @@ a {
   .responsive-grid {
     display: grid !important;
     grid-template-columns: auto auto !important;
+  }
+
+  .responsive-grid-3 {
+    display: grid !important;
+    grid-template-columns: 33% 33% 33% !important;
   }
 }
 
