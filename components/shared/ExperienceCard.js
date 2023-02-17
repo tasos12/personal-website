@@ -31,6 +31,7 @@ export default function ExperienceCard(props) {
     const dateContainerStyle = {
         display: "flex",
         alignItems: "center",
+        margin: "0px 5px",
     };
     const contentContainerStyle = {
         display: "flex",
@@ -86,25 +87,27 @@ export default function ExperienceCard(props) {
                         {props.positionTitle + " @ " + props.companyName}
                     </Typography>
                 </div>
-                <div style={dateContainerStyle}>
-                    <CalendarMonth
-                        className="header2-text"
-                        style={{ margin: "6px" }}
-                    />
-                    <Typography className="header3-text" component={"h2"}>
-                        {props.datePeriod}
-                    </Typography>
-                </div>
-                <div style={dateContainerStyle}>
-                    {expanded ? (
-                        <motion.div animate={{ rotate: 360 }}>
-                            <Remove />
-                        </motion.div>
-                    ) : (
-                        <motion.div>
-                            <Add />
-                        </motion.div>
-                    )}
+                <div style={{ display: "flex" }}>
+                    <div style={dateContainerStyle}>
+                        <CalendarMonth
+                            className="header2-text"
+                            style={{ margin: "6px" }}
+                        />
+                        <Typography className="header3-text" component={"h2"}>
+                            {props.datePeriod}
+                        </Typography>
+                    </div>
+                    <div style={dateContainerStyle}>
+                        {expanded ? (
+                            <motion.div animate={{ rotate: 360 }}>
+                                <Remove />
+                            </motion.div>
+                        ) : (
+                            <motion.div>
+                                <Add />
+                            </motion.div>
+                        )}
+                    </div>
                 </div>
             </div>
             <AnimatePresence initial={false}>

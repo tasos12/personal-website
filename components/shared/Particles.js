@@ -207,32 +207,6 @@ export default function CustomParticles() {
             },
             color: {
                 value: "#ffffff",
-                animation: {
-                    h: {
-                        count: 0,
-                        enable: false,
-                        offset: 0,
-                        speed: 1,
-                        decay: 0,
-                        sync: true,
-                    },
-                    s: {
-                        count: 0,
-                        enable: false,
-                        offset: 0,
-                        speed: 1,
-                        decay: 0,
-                        sync: true,
-                    },
-                    l: {
-                        count: 0,
-                        enable: false,
-                        offset: 0,
-                        speed: 1,
-                        decay: 0,
-                        sync: true,
-                    },
-                },
             },
             groups: {},
             move: {
@@ -303,13 +277,8 @@ export default function CustomParticles() {
                 warp: false,
             },
             number: {
-                density: {
-                    enable: true,
-                    area: 800,
-                    factor: 1000,
-                },
-                limit: 30,
-                value: 30,
+                limit: 20,
+                value: 20,
             },
             opacity: {
                 random: {
@@ -328,18 +297,7 @@ export default function CustomParticles() {
                     minimumValue: 0.1,
                 },
             },
-            reduceDuplicates: false,
-            shadow: {
-                blur: 0,
-                color: {
-                    value: "#000",
-                },
-                enable: false,
-                offset: {
-                    x: 0,
-                    y: 0,
-                },
-            },
+            reduceDuplicates: true,
             shape: {
                 options: {
                     text: {
@@ -358,6 +316,7 @@ export default function CustomParticles() {
                             "CSS",
                             "Java",
                             "C#",
+                            ".Net",
                             "Unity",
                             "MongoDB",
                             "SQL",
@@ -373,20 +332,11 @@ export default function CustomParticles() {
                 random: {
                     enable: true,
                     minimumValue: 8,
+                    maximumValue: 16,
                 },
                 value: {
-                    min: 8,
-                    max: 12,
-                },
-                animation: {
-                    count: 0,
-                    enable: false,
-                    speed: 40,
-                    decay: 0,
-                    sync: false,
-                    destroy: "none",
-                    startValue: "random",
-                    minimumValue: 0.1,
+                    min: 10,
+                    max: 14,
                 },
             },
             stroke: {
@@ -474,21 +424,6 @@ export default function CustomParticles() {
                 },
                 mode: "vertical",
                 speed: 25,
-            },
-            tilt: {
-                random: {
-                    enable: false,
-                    minimumValue: 0,
-                },
-                value: 0,
-                animation: {
-                    enable: false,
-                    speed: 0,
-                    decay: 0,
-                    sync: false,
-                },
-                direction: "clockwise",
-                enable: false,
             },
             twinkle: {
                 lines: {

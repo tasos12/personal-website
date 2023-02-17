@@ -16,7 +16,11 @@ export default function Navbar(props) {
     };
 
     return (
-        <AppBar position="fixed" sx={{ background: "rgb(20, 20, 50, 0.8)" }}>
+        <AppBar
+            position="fixed"
+            sx={{ background: "rgb(20, 20, 50, 0.8)" }}
+            className="responsive-navbar"
+        >
             <Container maxWidth="md">
                 <Box
                     sx={{
@@ -25,12 +29,9 @@ export default function Navbar(props) {
                 >
                     <LinkH href="/" sx={style}>
                         <Button
-                            sx={{ 
+                            sx={{
                                 textTransform: "lowercase",
-                                minWidth: 0,
-                                padding: "5px 10px",
-                                borderRadius: "10px",
-                                fontWeight: 700
+                                fontWeight: 700,
                             }}
                         >
                             {"*home"}
