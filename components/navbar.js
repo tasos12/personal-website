@@ -17,19 +17,32 @@ export default function Navbar(props) {
 
     return (
         <AppBar position="fixed" sx={{ background: "rgb(20, 20, 50, 0.8)" }}>
-            <Container width="80%" maxWidth="md">
+            <Container maxWidth="md">
                 <Box
                     sx={{
-                        flexGrow: 1,
-                        display: { xs: "none", md: "flex" },
-                        justifyContent: "center",
+                        float: "left",
                     }}
                 >
                     <LinkH href="/" sx={style}>
-                        <Button sx={{ textTransform: 'lowercase', fontWeight: 700 }}>
-                            {"//home"}
+                        <Button
+                            sx={{ 
+                                textTransform: "lowercase",
+                                minWidth: 0,
+                                padding: "5px 10px",
+                                borderRadius: "10px",
+                                fontWeight: 700
+                            }}
+                        >
+                            {"*home"}
                         </Button>
                     </LinkH>
+                </Box>
+                <Box
+                    sx={{
+                        float: "right",
+                        display: "flex",
+                    }}
+                >
                     {props.pages.map((page) => (
                         <Button key={page} sx={style}>
                             <Link
@@ -38,7 +51,7 @@ export default function Navbar(props) {
                                 smooth={true}
                                 offset={-60}
                             >
-                                {"//" + page}
+                                {"*" + page}
                             </Link>
                         </Button>
                     ))}

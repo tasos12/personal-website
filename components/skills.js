@@ -1,6 +1,5 @@
 import Container from "@mui/material/Container";
 import Title from "./shared/Title";
-import { motion } from "framer-motion";
 import SkillList from "./shared/SkillList";
 import Image from "next/image";
 import LeafletJS from "/public/images/shared/leafletjs.ico";
