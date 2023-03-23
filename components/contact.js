@@ -26,7 +26,7 @@ export default function Contact() {
             <Button
                 onClick={() =>
                     (window.location =
-                        "mailto:tasosggps@gmail.com?subject=Awesome%20Proposition")
+                        "mailto:tasos.gkagkas@gmail.com?subject=Awesome%20Proposition")
                 }
                 className="button"
             >
