@@ -2,8 +2,8 @@ import AppBar from "@mui/material/AppBar";
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import Button from "@mui/material/Button";
-import { Link, animateScroll as scroll } from "react-scroll";
-import { Link as LinkH } from "@mui/material";
+import { Link, animateScroll } from "react-scroll";
+import LinkH from "@mui/material/Link";
 
 export default function Navbar(props) {
     const style = {

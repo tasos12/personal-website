@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Navbar from "/components/navbar";
-import Footer from "/components/footer";
 import Container from "@mui/material/Container";
 
 export default function Home() {

@@ -13,29 +13,37 @@ export default function Home() {
     const pages = ["skills", "experience", "projects", "contact"];
 
     return (
-        <Box
-            sx={{
-                position: "relative",
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-            }}
-        >
+        <>            
             <Head>
                 <title>Tasos Gkagkas</title>
                 <meta
-                    name="Welcome to my website!"
-                    content="Tasos Gkagkas' personal website."
+                    name="description"
+                    content="Tasos Gkagkas is a Full stack developer from Greece.
+                             Feel free to contact him for any inspiring ideas or projects."
                 />
+                <meta 
+                    name="keywords" 
+                    content="Tasos Gkagkas, Tasos, Gkagkas, Gagas, Full Stack, Developer, Programmer, Web Developer, Web Programmer, Web"
+                />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             </Head>
-            <Navbar pages={pages} />
-            <About />
-            <Skills />
-            <Experience />
-            <Projects />
-            <Contact />
-            <Social />
-            <Footer />
-        </Box>
+            <Box
+                sx={{
+                    position: "relative",
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                }}
+            >
+                <Navbar pages={pages} />
+                <About />
+                <Skills />
+                <Experience />
+                <Projects />
+                <Contact />
+                <Social />
+                <Footer />
+            </Box>
+        </>
     );
 }

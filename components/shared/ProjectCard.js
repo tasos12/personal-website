@@ -26,7 +26,6 @@ export default function ProjectCard({ title, description, tags, image, link, liv
             onMouseEnter={() => setHover(true)}
             onMouseLeave={() => setHover(false)}
         >
-            <CardActionArea>
                 <CardMedia
                     component="img"
                     image={image}
@@ -119,7 +118,6 @@ export default function ProjectCard({ title, description, tags, image, link, liv
                     </motion.div>
                 )}
                 </AnimatePresence>
-            </CardActionArea>
         </Card>
     );
 }

@@ -24,18 +24,6 @@ import SkillList from "/components/shared/SkillList";
 export default function Home() {
     const pages = ["overview", "about", "technologies"];
     const sectionStyle = { margin: "20px 0" };
-    const technologyContainerStyle = {
-        background: "rgb(30, 30, 80)",
-        paddingTop: "5px",
-        color: "white",
-        display: "flex",
-        flexDirection: "column",
-    };
-    const listSubheaderStyle = {
-        background: "rgb(30, 30, 80)",
-        color: "white",
-        fontWeight: "700",
-    };
     const imageStyle = { maxWidth: "100%", height: "auto", objectFit: "cover" };
 
     return (
@@ -44,8 +32,13 @@ export default function Home() {
                 <title>Tasos Gkagkas - Social Media Analytics Suite</title>
                 <meta
                     name="description"
-                    content="Social media analytics suite project overview"
+                    content="Social media analytics suite is a project that was developed as part of the HORIZON 2020 project CALLISTO. It is a web application that allows users to analyze social media data about certain usecases."
                 />
+                <meta 
+                    name="keywords" 
+                    content="Tasos Gkagkas, Tasos, Gkagkas, Gagas, social media, analytics, suite, CALLISTO, HORIZON, 2020, Full Stack, developer, programmer, Web Developer, Web Programmer, Web"
+                />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             </Head>
             <Navbar pages={pages} />
             <Container

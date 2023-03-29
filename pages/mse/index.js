@@ -22,13 +22,6 @@ import overviewImage from "/public/images/mse/overview.png";
 export default function Home() {
     const pages = ["overview", "about", "technologies"];
     const sectionStyle = { margin: "20px 0" };
-    const technologyContainerStyle = {
-        background: "rgb(30, 30, 80)",
-        paddingTop: "5px",
-        color: "white",
-        display: "flex",
-        flexDirection: "column",
-    };
 
     return (
         <>
@@ -36,8 +29,16 @@ export default function Home() {
                 <title>Tasos Gkagkas - Multimodal Search Engine</title>
                 <meta
                     name="description"
-                    content="Multimodal Search Engine project overview"
+                    content="Multimodal Search Engine project is a web application 
+                    developed for CALLISTO a HORIZON 2020 program that allows the 
+                    end user to search and retrieve UAV images from a vast range of 
+                    datasets and to design a fly area for a UAV and generate a mission path"
                 />
+                <meta 
+                    name="keywords" 
+                    content="Tasos Gkagkas, Tasos, Gkagkas, Gagas, Multimodal, Search, Engine, CALLISTO, HORIZON, 2020, Full Stack, Developer, Programmer, Web Developer, Web Programmer, Web"
+                />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             </Head>
             <Navbar pages={pages} />
             <Container
