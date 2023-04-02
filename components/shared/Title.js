@@ -13,7 +13,7 @@ export default function Title(props) {
             }}
         >
             <Typography
-                component={"h1"}
+                component={"h2"}
                 className="header1-text"
                 sx={{
                     whiteSpace: "nowrap",

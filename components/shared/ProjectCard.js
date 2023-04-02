@@ -2,7 +2,6 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
-import CardActionArea from "@mui/material/CardActionArea";
 import Typography from "@mui/material/Typography";
 import Chip from "@mui/material/Chip";
 import ArrowCircleRightOutlined from "@mui/icons-material/ArrowCircleRightOutlined";

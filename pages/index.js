@@ -15,15 +15,19 @@ export default function Home() {
     return (
         <>            
             <Head>
-                <title>Tasos Gkagkas</title>
+                <title lang="en">Tasos Gkagkas</title>
                 <meta
                     name="description"
-                    content="Tasos Gkagkas is a Full stack developer from Greece.
-                             Feel free to contact him for any inspiring ideas or projects."
+                    content="
+                            Tasos Gkagkas (Gagas) is a Full stack developer from Greece.
+                            He is a Computer Science graduate and he is currently working
+                            as a full stack developer at a software company.
+                            Feel free to contact him for any inspiring ideas or projects.
+                            "
                 />
                 <meta 
                     name="keywords" 
-                    content="Tasos Gkagkas, Tasos, Gkagkas, Gagas, Full Stack, Developer, Programmer, Web Developer, Web Programmer, Web"
+                    content="tasos gkagkas, tasos gagas, Gkagkas, tasos gagas developer, tasos gkagkas developer, tasos gkagkas full stack developer, tasos gkagkas full stack, tasos gk"
                 />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             </Head>
